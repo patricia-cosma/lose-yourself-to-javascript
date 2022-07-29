@@ -8,4 +8,5 @@ So far, you can check examples of:
   <li>Conditional statements (if, if else, switch)</li>
   <li>Loops (for, while, nested)</li>
   <li>Functions</li>
+  <li>Array</li>
   
