@@ -1,6 +1,7 @@
 // array literal syntax []
 // [] - inside the brackets we provide a collection of items
 // values in an array are all part of a group, are set in a specific sequence
+// in JavaScript, arrays are objects. That means that arrays also have some built-in properties and methods (push, pop)
 
 // imagine a train with 4 different carriage
 var train1 = ["wheat", "barley", "potato", "salt", "rocks"];
@@ -13,6 +14,7 @@ console.log (colors[0]); // displays red
 console.log (colors[1]); // displays blue
 console.log (colors[2]); // displays green
 console.log (colors[3]); // displays yellow
+colors.pop (); // removes the last item of the array, in our case 'yellow'
 colors.push ('orange'); // add an element to the end of the array
 console.log (colors[4]); // displays orange
 colors.unshift('brown'); // add an element in the begining of the array
@@ -26,3 +28,14 @@ function listArrayItems(arr) {
 } // the exit condition is met when i < arr.length returns false (in our case, when i = 7 the function is not met)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
 listArrayItems(colors);
+
+// array as objects in JS
+function library (one, two, three) { // build a function that takes all its arguments and pushes them into an array
+    var shelf= []; // array
+    shelf.push(one); // push for 'one' ot create it as the first item in the array
+    shelf.push(two);
+    shelf.push(three);
+    return shelf; // the function will stop executing when return is called
+}
+var newPurchase = library ('Agatha Christie', 'Stephen King', 'Matt Haig'); // you can assign the entire array to a new variable (optional)
+console.log (newPurchase); // ['Agatha Christie', 'Stephen King', 'Matt Haig']
