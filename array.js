@@ -39,3 +39,12 @@ function library (one, two, three) { // build a function that takes all its argu
 }
 var newPurchase = library ('Agatha Christie', 'Stephen King', 'Matt Haig'); // you can assign the entire array to a new variable (optional)
 console.log (newPurchase); // ['Agatha Christie', 'Stephen King', 'Matt Haig']
+
+// arrays, as well as strings, are iterable; however, strings !==arrays
+// for loops can work on both arrays and strings
+var greet = "Hello, ";
+var user = "Monica";
+//console.log (greet.pop()); - it won't work for strings
+console.log (greet + user); // Hello, Monica
+console.log (greet.concat(user)); // Hello, Monica
+// the + operator, when used on strings, acts as a concatenation operator, meaning it joins strings together 
