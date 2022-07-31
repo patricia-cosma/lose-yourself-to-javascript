@@ -9,4 +9,4 @@ So far, you can check examples of:
   <li>Loops (for, while, nested)</li>
   <li>Functions</li>
   <li>Array</li>
-  
+  <li>Objects</li>
