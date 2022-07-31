@@ -1,0 +1,8 @@
+string cheet sheet:
+charAt() 
+concat() 
+indexOf() 
+lastIndexOf() 
+split() 
+toUpperCase() 
+toLowerCase()  
