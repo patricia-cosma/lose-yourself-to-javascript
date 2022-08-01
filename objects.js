@@ -55,3 +55,29 @@ for (var i = 0; i < tulips.length; i++) {
 // Using the fact that brackets notation can evaluate expressions, the arrOfKeys[i] property was accessed on the drone object. 
 // This value changed on each loop while the for loop was running
 // i = 0 then tulips[i] became tulips[0] which is color => supply[tulips[0]] became supply[color] which is 'orange'
+
+// object methods
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car); // { mileage: 98765, color: 'red' }
+car.turnTheKey = function() { // this function is called a method
+    console.log("The engine is running") // this log method will only run if it is accessed through the console object car; here, it won't run
+}
+console.log(car); // { mileage: 98765, color: 'red', turnTheKey: [Function (anonymous)] }
+
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car); // {mileage: 98765, color: 'red'}
+car.turnTheKey = function() {
+    console.log("The engine is running")
+}
+car.lightsOn = function() {
+    console.log("The lights are on.")
+}
+console.log(car); // {mileage: 98765, color: 'red', turnTheKey: ƒ, lightsOn: ƒ}
+car.turnTheKey(); // as it was accessed through the console object it will run ok: The engine is running
+car.lightsOn(); // The lights are on.
+
+// typeof operator
