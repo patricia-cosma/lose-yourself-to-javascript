@@ -81,3 +81,14 @@ car.turnTheKey(); // as it was accessed through the console object it will run o
 car.lightsOn(); // The lights are on.
 
 // typeof operator
+// this operator accepts and evaluates a parameter and returns the name of the data type represented as a string
+var test0 = typeof ('what is this?'); // string
+var test1 = typeof (19); // number
+var test2 = typeof (3.24); // number
+var test3 = typeof (true); // boolean
+var test4 = typeof (false); // boolean
+var test5 = typeof (1 < 3); // boolean
+var test6 = typeof ([1,2,3]); // object (cause arrays in JS are actually objects)
+var test7 = typeof ({firstProperty: 1}); // object
+var test8 = typeof (function abc() { console.log('abc')}); // function
+console.log (test0); // replace the number to test each var)
