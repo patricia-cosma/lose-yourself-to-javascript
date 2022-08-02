@@ -10,3 +10,4 @@ So far, you can check examples of:
   <li>Functions</li>
   <li>Array</li>
   <li>Objects</li>
+  <li>Error handling</li>
