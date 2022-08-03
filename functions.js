@@ -31,11 +31,30 @@ letterFinder ('test', 't');
 // --- No match found at 2
 // Found the t at 3
 
+// extra example
+function tulips (color, match) {
+    for (i=0; i < color.length; i++) {
+        if (color[i] == match) {
+            console.log ('Found the ', match, 'one at ', i);
+        } else {
+            console.log ('---- ', i, ' is another color');
+        }
+    }
+}
+tulips (['pink', 'green', 'yellow', 'orange', 'brown', 'orange'], 'orange')
+/*----  0  is another color
+----  1  is another color
+----  2  is another color
+Found the orange one at 3
+----  4  is another color 
+Found the orange one at 5 */
+
+
 // function with defensive programming
 function letterFinder(word, match) {
     var condition1 = typeof(word) == 'string' && word.length >=2;
     var condition2 = typeof(match) == 'string' && match.length == 1;
-    if (condition1 == true && condition1 == true) {
+    if (condition1 == true && condition2 == true) {
         for(i = 0; i < word.length; i++) {
             if(word[i] == match) {
                 console.log('Found the', match, 'at', i)
