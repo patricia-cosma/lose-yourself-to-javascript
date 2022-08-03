@@ -59,3 +59,16 @@ addTwoNums (5,'5');
 console.log ('it still works')
 
 // undefined, null & empty variables
+// null = intentional absence of object value
+var letters = 'abc';
+letters.match (/d/); // null - it knows it should be there
+
+// undefined
+console.log ('Jane'); // Jane undefined - because it is a function and you are not returning a value
+// variable is declared without an assignment like a new born is undefined until they have a name :)
+var noise; // undefined is automatically assigned to the variable; that's why is better to assign it when we declare it
+console.log (noise);
+
+//empty string
+var name1 = ' ';
+var name2 = " ";

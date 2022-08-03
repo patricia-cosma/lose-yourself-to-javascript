@@ -33,3 +33,11 @@ var counter = 0;
 counter += 5;
 counter += 3;
 console.log (counter); // 8
+
+// type coercion
+var value1 = '5';
+var value2 = 9;
+var sum = value1 + value2;
+console.log (sum); // JS will coerce the 9 from a number into a string and then conncatenate the values together, resulting in a string of 59
+var sum = Number(value1) + value2;
+console.log (sum); // 5 was converted into a number using Number() method and now it will return 14
