@@ -39,3 +39,18 @@ switch (day) {
     default:
         console.log ('There is no such day');
 }
+
+var tulip = 'orange';
+switch (tulip) {
+    case 'white':
+        console.log ('Purity');
+        break;
+    case 'yellow':
+        console.log ('Sunny');
+        break;
+    case 'orange':
+        console.log ('Strong');
+        break;
+    default:
+        console.log ('There is no associated meaning');
+}
