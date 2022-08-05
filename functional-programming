@@ -1,0 +1,33 @@
+// function calling and recursion
+function example () {
+    console.log ('line one');
+    console.log ('line two');
+    console.log ('line three');
+    // example (); - adding the function calling here would run the function endlessly
+}
+example ();
+
+// to avoid the function repeting in an infinite loop, we can create the following:
+let counter = 3;
+function example () {
+    console.log (counter);
+    counter = counter - 1;
+    if (counter === 0) return;
+    example ();
+}
+example (); // 3, 2, 1 (and then it will stop)
+// in this case, the function calls itself - this is known as recursion
+// recursion = alternative way to run repetitive code without the use of loops
+
+// scope = it determines which parts of the code are accessible or not
+var num1 = 10; // global scope
+function score () {
+    var num2 = 20; // local scope - this variable is scoped to the function in which it was created
+    console.log (num2); // 20
+} // the local ("child") scope is linked to the global ("parent") scope - this link is called the chain
+
+// functions are first-class citizens in FP, meaning they are treated like any other value
+// function that returned another function = higher-order function
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var getOdds3 = arr => arr.filter(num => num % 2 !== 0);
+console.log(getOdds3(arr));
