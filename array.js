@@ -47,4 +47,42 @@ var user = "Monica";
 //console.log (greet.pop()); - it won't work for strings
 console.log (greet + user); // Hello, Monica
 console.log (greet.concat(user)); // Hello, Monica
-// the + operator, when used on strings, acts as a concatenation operator, meaning it joins strings together 
+// the + operator, when used on strings, acts as a concatenation operator, meaning it joins strings together
+
+// access array inside an array
+var random = ['tree', 795, ['lime', 'lemon', 'orange']];
+console.log(random[2][2]); // orange
+
+// finding items in an array
+var birds = ['Parrot', 'Falcon', 'Owl'];
+console.log(birds.indexOf('Owl')); // 2
+
+// filter arrays (imperative approach)
+// The filter() method creates a shallow copy of a portion of a given array, 
+// filtered down to just the elements from the given array that pass the test implemented by the provided function.
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function getOdds (arr){
+   let odds = [];
+    for (let i = 0; i < arr.length + 1; i++) {
+          if (i % 2 !== 0){
+             odds.push (i);
+          }
+        }
+    return odds;
+  }
+console.log (getOdds(arr));
+
+// (functional approach) // 1
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+var result = words.filter(word => word.length > 6);
+console.log(result);
+
+// 2
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function getOdds2 (arr) {
+    return arr.filter(num => num % 2 !== 0); // '=>' arrow function
+ }
+ console.log (getOdds2(arr));
+// or instead of using the function, it can get even shorter using both lines below
+var getOdds3 = arr => arr.filter(num => num % 2 !== 0);
+console.log(getOdds3(arr));

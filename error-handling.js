@@ -22,7 +22,7 @@ console.log (a + b);
 console.log ('This piece of code will not run');
 // because a and b were not declared
 
-// try catch blocks - ensures that JS doesn't stop program execution even if there is an error
+// try-catch blocks - ensures that JS doesn't stop program execution even if there is an error
 try {
     console.log (a + b); // adding the code we think doesn't work
 } catch { // this will catch the error that the try block produces
