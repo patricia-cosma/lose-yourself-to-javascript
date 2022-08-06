@@ -12,3 +12,4 @@ So far, you can check examples of:
   <li>Objects (declare, add, update, remove, dot & brackets notations, methods, typeof operator, Math object)</li>
   <li>Error handling (most common errors, try... catch blocks, manual error, error prevention, undefined, null & empty variables</li>
   <li>Cheet sheet (strings)</li>
+  <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
