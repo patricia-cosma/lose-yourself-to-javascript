@@ -31,3 +31,38 @@ function score () {
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var getOdds3 = arr => arr.filter(num => num % 2 !== 0);
 console.log(getOdds3(arr));
+
+// building a functional program
+// build a function-based console log message generator
+function consoleStyler(color, background, fontSize, txt) {
+    var message = "%c" + txt;
+    var style = `color: ${color};`
+    style += `background: ${background};`
+    style += `font-size: ${fontSize};`
+    console.log(message, style);
+}
+
+// build another console log message generator
+function celebrateStyler(reason) {
+    var fontStyle = "color: tomato; font-size: 50px";
+    if (reason == "birthday") {
+        console.log(`%cHappy birthday`, fontStyle);
+    } else if (reason == "champions") {
+        console.log(`%cCongrats on the title!`, fontStyle);
+    } else {
+        console.log(reason, fontStyle);
+    }
+}
+
+// run both the consoleStyler and the celebrateStyler functions
+consoleStyler('#1d5c63', '#ede6db', '40px', 'Congrats!');
+celebrateStyler('birthday');
+
+// insert a congratulatory and custom message
+function styleAndCelebrate(color, background, fontSize, txt, reason) {
+    consoleStyler(color, background, fontSize, txt);
+    celebrateStyler(reason);
+}
+
+// call styleAndCelebrate
+styleAndCelebrate('#ef7c8e', '#fae8e0', '30px', 'You made it!', 'champions');
