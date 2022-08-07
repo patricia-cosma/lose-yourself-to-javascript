@@ -13,3 +13,14 @@ So far, you can check examples of:
   <li>Error handling (most common errors, try... catch blocks, manual error, error prevention, undefined, null & empty variables</li>
   <li>Cheet sheet (strings)</li>
   <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
+</ul>
+  
+  
+  
+  # Write code & learn
+  
+  Beside learning step by step the basic elements of JavaScript, I find it useful to take small and easy projects that require only vanilla JavaScript and try to understand what each element is doing, by implementing the project in my own way.
+  On this part of the repository, I added so far:
+  <ol>
+    <li>Drum Kit</li>
+  </ol>
