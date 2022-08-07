@@ -1,0 +1,55 @@
+html {
+    background: url(./background.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+/* define properties of the main div element in html */
+.keys {
+    display: flex;
+    flex: 1; /* all flexible items have the same length, regardless of its content */
+    min-height: 100vh; /* occupies the web brower's viewport hieght & it will let the body element grow even more if necessary*/
+    align-items: center;
+    justify-content: center;
+}
+
+/* define properties for all the sub-divs in the body */
+.key {
+    border: 0.3rem solid green; /*creates the border around each element*/
+    border-radius: 0.4rem; /*defines the radius*/
+    margin: 1rem; /*adds margin for each element; therefore you'll see the elements more spaced now*/
+    font-size: 2rem;
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    text-shadow: 0 0 0.5rem black; /*horizontal shadow, vertifical shadow, blur, color */
+    transition: all 0.2s ease; /* will go along when/with .playing */
+}
+
+.playing {
+    transform: scale (1.1);
+    border-color: orange;
+    box-shadow: 0 0 1 rem orange;
+}
+
+/*  kbd is a HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device */
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: yellowgreen;
+}

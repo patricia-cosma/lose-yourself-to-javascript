@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="keys">
+        <!-- for key codes: keycode.info -->
+        <div data-key="65" class="key">
+            <kdb>A</kdb>
+            <span class="sound">Dog</span>
+        </div>
+        <div data-key="78" class="key">
+            <kdb>N</kdb>
+            <span class="sound">Cat</span>
+        </div>
+        <div data-key="73" class="key">
+            <kdb>I</kdb>
+            <span class="sound">Duck</span>
+        </div>
+        <div data-key="77" class="key">
+            <kdb>M</kdb>
+            <span class="sound">Horse</span>
+        </div>
+        <div data-key="65" class="key">
+            <kdb>A</kdb>
+            <span class="sound">Pig</span>
+        </div>
+        <div data-key="76" class="key">
+            <kdb>L</kdb>
+            <span class="sound">Chicken</span>
+        </div>
+    </div>
+    <!-- About data-* attribute: https://www.w3schools.com/tags/att_data-.asp -->
+    <audio src="sounds/dog.mp3" data-key="65"></audio>
+    <audio src="sounds/cat.mp3" data-key="78"></audio>
+    <audio src="sounds/duck.mp3" data-key="73"></audio>
+    <audio src="sounds/horse.mp3" data-key="77"></audio>
+    <audio src="sounds/pig.mp3" data-key="65"></audio>
+    <audio src="sounds/chicken.mp3" data-key="76"></audio>
+
+    <!-- <script src="script.js"></script> -->
+    
+</body>
+</html>
