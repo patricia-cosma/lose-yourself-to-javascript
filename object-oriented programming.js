@@ -117,3 +117,28 @@ var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
 train5.toggleLights(); // undefined
 train5.lightsStatus(); // Lights on? true
 highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
+
+// using class instance as another class' constructor's property
+class StationaryBike {
+    constructor(position, gears) {
+        this.position = position
+        this.gears = gears
+    }
+}
+class Treadmill {
+    constructor(position, modes) {
+        this.position = position
+        this.modes = modes
+    }
+}
+class Gym {
+    constructor(openHrs, stationaryBikePos, treadmillPos) {
+        this.openHrs = openHrs
+        this.stationaryBike = new StationaryBike(stationaryBikePos, 8)
+        this.treadmill = new Treadmill(treadmillPos, 5)
+    }
+}
+var boxingGym = new Gym("7-22", "right corner", "left corner")
+console.log(boxingGym.openHrs)
+console.log(boxingGym.stationaryBike) 
+console.log(boxingGym.treadmill) 
