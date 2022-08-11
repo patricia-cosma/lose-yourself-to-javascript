@@ -27,3 +27,32 @@ for (var i = 100; i > 10; i = i - 10) {  // the outer loop will act as the first
         console.log(i + " divided by " + j + " equals " + i / j);
     }
 }
+
+// for ... of loops
+// arrays are iterable, therefore we can use the for...of right away
+const colors = ['red','orange','yellow']
+for (var color of colors) {
+    console.log(color); // it will output each color on a different row
+}
+// we can use the fact that a for...of loop can be run on arrays to loop over objects using built-in methods (as objects are not iterable, therefore this cannot be done directly)
+// Object.keys() - returns the properties of the object, without the values
+const car2 = {
+    speed: 200,
+    color: "red"
+}
+console.log(Object.keys(car2)); // ['speed','color']
+
+// Object.values () - returns only the values
+const car3 = {
+    speed: 300,
+    color: "yellow"
+}
+console.log(Object.values(car3)); // [300, 'yellow']
+
+// Object.entries() - returns both the keys and the values
+const car4 = {
+    speed: 400,
+    color: 'magenta'
+}
+console.log(Object.entries(car4));
+// [ ['speed', 400], ['color', 'magenta'] ] - an array of arrays / 2-member arrays nested in a bigger one
