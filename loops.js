@@ -56,3 +56,15 @@ const car4 = {
 }
 console.log(Object.entries(car4));
 // [ ['speed', 400], ['color', 'magenta'] ] - an array of arrays / 2-member arrays nested in a bigger one
+
+// example of how to loop over any object's own property keys and values.
+var clothingItem = {
+    price: 50,
+    color: 'beige',
+    material: 'cotton',
+    season: 'autumn'
+}
+
+for( key of Object.keys(clothingItem) ) {
+    console.log(keys, ":", clothingItem[key])
+}
