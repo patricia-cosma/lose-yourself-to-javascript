@@ -6,13 +6,14 @@ So far, you can check examples of:
 <ul>
   <li>Operators (logical operators, % (modulus) operator, += operator, type coercion)</li>
   <li>Conditional statements (if... else, if... else if... else, switch)</li>
-  <li>Loops (for, while, nested)</li>
+  <li>Loops (for, while, nested, for...of, build-in methods)</li>
   <li>Functions (with & without paramaters, locate position, defensive programming)</li>
   <li>Arrays (declare, display, add, remove, build & call functions, arrays as objects, strings != arrays)</li>
   <li>Objects (declare, add, update, remove, dot & brackets notations, methods, typeof operator, Math object)</li>
   <li>Error handling (most common errors, try... catch blocks, manual error, error prevention, undefined, null & empty variables</li>
   <li>Cheet sheet (strings)</li>
   <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
+  <li>Object-oriented programming</li>
 </ul>
   
   
