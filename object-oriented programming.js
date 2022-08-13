@@ -292,3 +292,10 @@ class WithDefaultParams {
 }
 var better = new WithDefaultParams();
 better.calculate(); // Result: 6
+
+// template literals
+let greet = "Hello";
+let place = "World";
+console.log(`${greet} ${place} !`) // it allows for variable interpolation
+
+// // multi-line strings
