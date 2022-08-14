@@ -13,7 +13,7 @@ So far, you can check examples of:
   <li>Error handling (most common errors, try... catch blocks, manual error, error prevention, undefined, null & empty variables</li>
   <li>Cheet sheet (strings)</li>
   <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
-  <li>Object-oriented programming</li>
+  <li>Object-oriented programming (polymorphism, super-class, creating classes, designing an OOP)</li>
 </ul>
   
   
