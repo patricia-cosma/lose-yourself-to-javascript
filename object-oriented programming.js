@@ -298,9 +298,12 @@ let greet = "Hello";
 let place = "World";
 console.log(`${greet} ${place} !`) // it allows for variable interpolation
 
-// // multi-line strings
+// // multiline strings
 let multiline = `
     This is a multiline string,
     possible in ES6!
     `;
 console.log (multiline);
+
+// expression evaluation
+console.log(`${1 + 1 + 1 + 1 + 1} stars!`)
