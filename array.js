@@ -86,3 +86,28 @@ function getOdds2 (arr) {
 // or instead of using the function, it can get even shorter using both lines below
 var getOdds3 = arr => arr.filter(num => num % 2 !== 0);
 console.log(getOdds3(arr));
+
+// data structures - built-in methods 
+// forEach(): a handy method that allows you to loop over each of their members
+const fruits = ['kiwi','mango','apple','pear'];
+function appendIndex(fruit, index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex);
+
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${fruit}`); // 0. kiwi ...
+});
+
+// the filter() method: it filters your arrays based on a specific test. Those array items that pass the test are returned.
+const nums = [0,10,20,30,40,50];
+nums.filter( function(num) {
+    return num > 20; // [30,40,50]
+})
+
+/* the map() method: This method is used to map each array item over to another array's item,
+based on whatever work is performed inside the function that is passed-in to the map as a parameter. */
+[0,10,20,30,40,50].map( function(num) {
+    return num / 10; // [0,1,2,3,4,5]
+})
