@@ -113,3 +113,29 @@ console.log (rounded1);
 var decimal = Math.random () * 10; // get a random decimal number (0-0.99) and save it to a variable
 var rounded = Math.ceil (decimal); // rounding up the value of decimal
 console.log (rounded); // log the value of rounded to the console
+
+// data structure - working with objects in JS
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result); // ['speed',100,'color','yellow']
+
+
+// working with Map in JS: very similar to an object, but it doesn't have inheritance. No prototypes! This makes it useful as a data storage.
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers); // Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
+bestBoxers.get(1); // 'The Champion'
+
+// spread operator
+
+// rest operator: it allows you to take items from an array and use them to create a separate sub-array

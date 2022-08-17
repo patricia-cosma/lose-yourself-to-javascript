@@ -111,3 +111,9 @@ based on whatever work is performed inside the function that is passed-in to the
 [0,10,20,30,40,50].map( function(num) {
     return num / 10; // [0,1,2,3,4,5]
 })
+
+// working with Sets in JS: A set is a collection of unique values; it can accept, for example, arrays
+// filter unique members of the array
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits); // Set(3) {'apple', 'pear', 'plum'}
