@@ -139,3 +139,16 @@ bestBoxers.get(1); // 'The Champion'
 // spread operator
 
 // rest operator: it allows you to take items from an array and use them to create a separate sub-array
+const flying = { wings: 2 }
+const car = { wheels: 4 }
+const flyingCar = {...flying, ...car}
+console.log(flyingCar) // {wings: 2, wheels: 4}
+
+// copy an object into a new object
+const car1 = {
+    speed: 200,
+    color: 'yellow'
+}
+const car2 = {...car1}
+car1.speed = 201
+console.log(car1.speed, car2.speed) // 201 200
