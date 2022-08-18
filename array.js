@@ -15,7 +15,7 @@ console.log (colors[1]); // displays blue
 console.log (colors[2]); // displays green
 console.log (colors[3]); // displays yellow
 colors.pop (); // removes the last item of the array, in our case 'yellow'
-colors.push ('orange'); // add an element to the end of the array
+colors.push ('orange'); // add an element to the end of the array // !!! you can push elements using the rest operator as well (see below L127)
 console.log (colors[4]); // displays orange
 colors.unshift('brown'); // add an element in the begining of the array
 console.log (colors[0]); // displays brown, which is now the first value of the array
@@ -117,3 +117,29 @@ based on whatever work is performed inside the function that is passed-in to the
 const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits); // Set(3) {'apple', 'pear', 'plum'}
+
+// spread operator
+const parts = ['shoulders', 'knees'];
+const lyrics = ['head', ...parts, 'and', 'toes']; //  ["head", "shoulders", "knees", "and", "toes"]
+
+// rest operator
+const someFruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+const fruitsAndBerries = [...someFruits, ...berries] // concatenate
+console.log(fruitsAndBerries); // outputs a single array
+
+// add new elements without the push() method using rest operator
+let veggie = ['onion', 'parsley'];
+veggie = [...veggie, 'carrot', 'beetroot'];
+console.log(veggie); // ['onion', 'parsley', 'carrot', 'beetroot']
+
+// string ==> array
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+
+// copy an array into a new array
+const fruits1 = ['apples', 'pears']
+const fruits2 = [...fruits1]
+fruits1.pop()
+console.log(fruits1, "not", fruits2) // ['apples'] 'not' ['apples','pears']
