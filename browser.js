@@ -25,3 +25,19 @@ function handleClick() {
 }
 target.addEventListener('click', handleClick) // 2 paramters: event type as a string value and secondly, the function
 // when clicking anywhere in the body, the text from the function will be output in the console
+
+// alternative methods to listen to events is by using HTML event attributes
+function handleClick2() {
+    console.log ('Clicked the heading')
+}
+// we then go the HTML file and add onclick="handleClick2()" in the heading we aim for (<h1 onclick="handleClick2()">)
+// now when we click on the heading, both functions will run (triggering so 2 event listeners); for the rest of the body, only the first one remains
+
+// web page content update
+let answer = prompt('What is your name?');
+if (typeof(answer) === 'string') {
+    var h1 = document.createElement('h1')
+    h1.innerText = answer;
+    document.body.innerText = ''; // de ce asta?
+    document.body.appendChild(h1);
+}
