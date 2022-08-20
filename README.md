@@ -14,6 +14,7 @@ So far, you can check examples of:
   <li>Cheet sheet (strings)</li>
   <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
   <li>Object-oriented programming (polymorphism, super-class, creating classes, designing an OOP, default paramaters, template literals, expression evaluation)</li>
+  <li>Browser (DOM manipulation)</li>
 </ul>
   
   
