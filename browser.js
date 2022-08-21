@@ -78,3 +78,25 @@ function handleClicks () {
     }
 }
 h1.addEventListener ('click', handleClicks)
+
+
+// JSON - JavaScript Object Notation
+// Only a subset of values in JavaScript can be properly stringified to JSON and parsed from a JavaScript object into a JSON string
+// JSON does not accept functions
+
+// convert JSON string into a regular JS object
+const jsonStr = '{"greeting":"hello"}' // get the JSON string and assign it to a variable
+JSON.parse (jsonStr) // run the JSON parse method on the variable
+// now a regular JS object will be returned
+const plainObj = JSON.parse (jsonStr) // asign the new object to a variable
+// after assigning it, the object can be manipulated just like a regular JS object
+plainObj.greeting = 'hi' // the greeting is now changed into 'hi'
+
+// convert JS into JSON
+const data = {
+    firstName: 'John',
+    lastName: 'Doe',
+    greeting: 'hello'
+}
+JSON.stringify(data) // this results in a JSON string
+// '{"firstName":"John","lastName":"Doe","greeting":"hello"}'
