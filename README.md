@@ -15,6 +15,8 @@ So far, you can check examples of:
   <li>Functional programming (function calling & recursion, scope, higher-order function)</li>
   <li>Object-oriented programming (polymorphism, super-class, creating classes, designing an OOP, default paramaters, template literals, expression evaluation)</li>
   <li>Browser (DOM manipulation)</li>
+  <li>Testing (basic notations)</li>
+  <li>Exercise: Price calculcation</li>
 </ul>
   
   
