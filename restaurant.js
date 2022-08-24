@@ -31,7 +31,7 @@ function getPrices(taxBoolean) {
             console.log("You need to pass a boolean to the getPrices call!")
             return 0;
         }
-        console.log("Dish: ", dishData[key].price, "Price: $", finalPrice);
+        console.log(`Dish: ${dishData[key].name} Price: $${finalPrice}`);
     }
 }
 
@@ -45,7 +45,7 @@ function getDiscount(taxBoolean, guests) {
         } else if (guests >= 5) {
             discount = 10;
         }
-        console.log('Discount is: $' + discount);
+        console.log(`Discount is: $${discount}`);
     } else {
         console.log ('The second argument must be a number between 0 and 30')
     }
